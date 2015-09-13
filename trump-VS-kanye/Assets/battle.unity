@@ -99,6 +99,7 @@ GameObject:
   - 92: {fileID: 136836466}
   - 124: {fileID: 136836465}
   - 81: {fileID: 136836464}
+  - 82: {fileID: 136836469}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -172,6 +173,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!82 &136836469
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 136836463}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b2c6ed57194d54f0cbb99663c52bc228, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .287999988
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &150125109
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Make Slaves Build Great Wall Of America
+  m_Text: Make Slaves Build Great Wall Of Merica
 --- !u!222 &184264051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -389,8 +459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: .815686345, g: .815686345, b: .800000072, a: 1}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -528,6 +598,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 312343386}
   - 212: {fileID: 312343385}
+  - 95: {fileID: 312343387}
   m_Layer: 0
   m_Name: kanyegayfish_l
   m_TagString: Untagged
@@ -570,9 +641,27 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7, y: 2.6400001, z: -.300000012}
   m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 582882940}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!95 &312343387
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312343384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c319ea7c082a349edbd03ddb4864f409, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &336779256
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,7 +828,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 494017175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .0700000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -793,11 +882,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 582882938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01000023, y: .439999998, z: 0}
-  m_LocalScale: {x: .235332459, y: .104276903, z: 1}
+  m_LocalPosition: {x: .00500011444, y: -1.10000002, z: .300000012}
+  m_LocalScale: {x: .11766623, y: .0521384515, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 312343386}
+  m_RootOrder: 0
 --- !u!1 &593826299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +1111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Money Bags
+  m_Text: Twitter Comment
 --- !u!222 &808387972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1248,11 +1337,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1620852652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.44000006, y: -2.05999994, z: 0}
-  m_LocalScale: {x: .399217248, y: .165044889, z: 1}
+  m_LocalPosition: {x: -.0602273121, y: -4.4897809, z: .589999974}
+  m_LocalScale: {x: .480873823, y: .318032384, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 2136994592}
+  m_RootOrder: 0
 --- !u!1 &1811718578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,7 +1384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'What will you do?
+  m_Text: 'A rare Kanye Has been spoted. Your goal is to Deport It!
 
 '
 --- !u!222 &1811718580
@@ -1561,6 +1650,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2136994592}
   - 212: {fileID: 2136994591}
+  - 111: {fileID: 2136994594}
+  - 95: {fileID: 2136994593}
   m_Layer: 0
   m_Name: donald trump
   m_TagString: Untagged
@@ -1601,8 +1692,40 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2136994590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.38999987, y: .270000011, z: -.589999974}
+  m_LocalPosition: {x: -6.78999996, y: .270000011, z: -.589999974}
   m_LocalScale: {x: .830191255, y: .518956244, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1620852654}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!95 &2136994593
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136994590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c05539a4d74704d288d4b639ddc3a67d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &2136994594
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136994590}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
